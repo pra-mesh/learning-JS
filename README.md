@@ -25,7 +25,7 @@ Javascript
  8. Arrays
  9. Objects
 
- <u><strong>Variables-hoisting</strong></u>
+ <u><strong>Variables-hoisting</strong><\u>
  <br/>
  <u>const\let\var</u>
  const/let/var keyword is usually used to define varaible
