@@ -29,5 +29,34 @@ Javascript
  <br/>
  <u>const\let\var</u>
  const/let/var keyword is usually used to define varaible
+ var was introduced in ES5 (ecmascript5)
+ const/let was introduced in ES6
+ var can be overriden after variable is overriden 
+
  <u>Differnce between const/let/var</u>
 
+## Interactions
+This features is used to connect variables and user interface.
+Keywords:
+ a. Alert- alert the users by sending any kind of message
+ b. Promt - ask users to input value
+ c. Conmfirm - Yes or No.
+
+## Data Types
+1. String let color ="Yellow";
+2. Number let weight ="7.5";
+3. Bigint let hugeString = BigInt ("900719925474099") //900719925474099ln
+4. Boolean let x = true;
+5. Undefined let x;
+6. NUll let foo = null; //foo has no type and value --- learn more about it
+7. Symbol //symbols are notation to create unique ID Eg: const s = Symbol("Pramesh")
+8. Object const person = {fistName:"John", lastName:"Doe"};
+Note sd
+By default JS takes all variable as an string so whenever a variable with stirng and numeric value we try to 
+perfom math operation it might not work.
+
+### The object Data Type
+The object data type can contain:
+1. An object
+2. An array
+3. A date
