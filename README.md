@@ -26,12 +26,13 @@ git config --global user.email "<github_Email>"
  9. Objects
 
 ## Variables-hoisting
+Variables are containers of data.
  <br/>
  const\let\var
  const/let/var keyword is usually used to define varaible
  var was introduced in ES5 (ecmascript5)
  const/let was introduced in ES6
- var can be overriden after variable is overriden 
+ var and let can be overriden after variable is overriden 
 
  #### Differnce between const/let/var
 
