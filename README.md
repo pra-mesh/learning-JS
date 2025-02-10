@@ -1,5 +1,5 @@
 # learning-JS
-Git Commands
+## Git Commands
 git config --global user.name "<github_UserName>"
 git config --global user.email "<github_Email>"
 1.	Clone
@@ -12,9 +12,9 @@ git config --global user.email "<github_Email>"
 4.	Push
     => git push origin <branch>
 
-Javascript
+## Javascript
  -Programming language of the 'web'
- What we will cover
+### What we will cover
  1. Variables/Hoisting
  2. Comments
  3. Interactions
@@ -25,15 +25,15 @@ Javascript
  8. Arrays
  9. Objects
 
- <u><strong>Variables-hoisting</strong></u>
+## Variables-hoisting
  <br/>
- <u>const\let\var</u>
+ const\let\var
  const/let/var keyword is usually used to define varaible
  var was introduced in ES5 (ecmascript5)
  const/let was introduced in ES6
  var can be overriden after variable is overriden 
 
- <u>Differnce between const/let/var</u>
+ #### Differnce between const/let/var
 
 ## Interactions
 This features is used to connect variables and user interface.
@@ -55,8 +55,25 @@ Note sd
 By default JS takes all variable as an string so whenever a variable with stirng and numeric value we try to 
 perfom math operation it might not work.
 
-### The object Data Type
+### The object Data Type (Complex Data Type)
 The object data type can contain:
 1. An object
 2. An array
 3. A date
+
+### Type Conversion / Type Coercion
+ Type conversion are explicit usually
+## Comment
+1. Single Line Comment //
+2. Multi Line Comment /**/
+
+## Statement
+ ### Conditional Operator
+ES5
+1. If Else
+2. Switch Case
+
+ES6
+1. ternary operator
+
+##### === strict value checking than == as the possiblity of condition with === is only either true or false
