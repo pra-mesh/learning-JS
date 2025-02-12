@@ -84,3 +84,10 @@ ES6
 2. OR (||) : Any contion met
 3. NOT ! : Negative checks null, "", false, undefined
  
+
+ ## Loops
+ To execute certain block of code for certain iteration
+###Types
+1. For   : for(start;check;increment/decrement)
+2. do...while
+3. while
