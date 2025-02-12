@@ -76,5 +76,11 @@ ES5
 
 ES6
 1. ternary operator
-
+ It is also called conditional operator with inline condition check;
 ##### === strict value checking than == as the possiblity of condition with === is only either true or false
+
+### Logical Operator
+1. AND (&&) : all contiton met
+2. OR (||) : Any contion met
+3. NOT ! : Negative checks null, "", false, undefined
+ 
