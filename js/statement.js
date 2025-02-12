@@ -28,3 +28,6 @@ logic
 60% - 69.99% second division
 below 60%: fail
 */
+
+// ES6 Ternary Operator
+gender === "m" ? alert("Male") : alert("Female");
