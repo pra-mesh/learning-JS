@@ -1,13 +1,30 @@
-//Ceate a variable called carName, assign the value Volvo to it.
-let carName ="Volvo";
-//Create a variable called x, assign the value 50 to it.
-let x =50;
-//Display the sum of 5 + 10, using two variables: x and y.
-let x1 = 5;
-let y = 10;
-console.log(x+y);
-//Create a variable called z, assign x + y to it, and display the result in an alert box.
-let z =x+y;
-alert(z);
-//On one single line, declare three variables with the following names and values:;
-let firstName ="John", lastName = "Doe", age = 35;
+// Function takes input, uses lgic and returns output
+
+
+//syntax
+//ES5
+// function <fn-Name> (input){
+//     //logic
+//     //return
+// }
+
+//Write a function to add 2 numbers
+// function declaration // intalization
+function sum(num1,num2){
+    const result = num1+num2;
+    return result;
+}
+
+// Input data
+const val1 = +prompt("Enter First number");
+const val2 = + prompt("Enter Second number");
+const ans = sum(val1,val2);
+alert(ans);
+
+//Write a function to calcute the area of circle
+const radius = +prompt("Enter circle radius");
+
+function area(rad){
+    return Math.PI * Math.pow(+rad,2);
+}
+alert(`area of circle is ${area(radius)}`);

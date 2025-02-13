@@ -95,6 +95,25 @@ ES6
 ## Function
 => function are building blocks
 => they allow code to be called many times without repetition. (DRY);
+### Syntax
+ES5
+``` JS
+ function <fn-Name> (input){
+     //logic
+    //return
+ }
+```
+
+1. Arrow Function (ES6)
+2. Default Function
+3. Parameterized Function
+4. Closure
+5. IIFEs
+6. Explicit Function
+7. Implicit Function
+9. Inline Function
+10. Callback Function
+
 
 ### What is hoisting?
 ### Waht is block vs scope fuction?
