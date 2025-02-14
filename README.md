@@ -96,7 +96,7 @@ ES6
 => function are building blocks
 => they allow code to be called many times without repetition. (DRY);
 ### Syntax
-ES5
+#### ES5
 ``` JS
  function <fn-Name> (input){
      //logic
@@ -114,6 +114,33 @@ ES5
 9. Inline Function
 10. Callback Function
 
+#### ES6 or Arrow function
+```js
+const sum = (num1, num2) =>{
+return num1 + num2;
+}
+```
+#### Default Function 
+It is used to set value of arguments of parameters with default value;
+```js
+const pagination =(page) =>{
+    return `page number ${page}`;
+}
+```
+#### Parameterized function
+If you need to pass the specify each parameter value to control the argument passing parameterized function is used
+```js
+const users = ({user1, user2 ="user", user3}) =>{
+    return `${user1},${user2},${user3}`;
+}
+console.log(user({user1:"p", user3:"m"}));
+```
 
+#### IIFEs (Immediately Invoked Functional Expression)
+``` js
+(()=>{
+    console.log("IIFE")
+})();
+```
 ### What is hoisting?
 ### Waht is block vs scope fuction?

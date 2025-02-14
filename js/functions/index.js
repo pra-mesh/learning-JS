@@ -28,3 +28,22 @@ function area(rad){
     return Math.PI * Math.pow(+rad,2);
 }
 alert(`area of circle is ${area(radius)}`);
+
+
+///Arrow Function (ES6)
+const sumES6 = (num1, num2) => {
+    return num1 + num2;
+    }
+
+alert(sumES6(2,2));
+
+///Default function
+const pagination =(page) =>{
+    return `page number ${page}`;
+}
+
+//IIFEs
+
+((a="test")=>{
+    console.log("IIFE",a)
+})(1);
