@@ -113,6 +113,7 @@ ES6
 7. Implicit Function
 9. Inline Function
 10. Callback Function
+11. Pure function
 
 #### ES6 or Arrow function
 ```js
@@ -142,5 +143,95 @@ console.log(user({user1:"p", user3:"m"}));
     console.log("IIFE")
 })();
 ```
+
+##### Function can return primitive DataType /complex DataType / function
+
+#### Closure
+Whenever you need to return function we use closure
+
+``` js
+
+const counter = () => {
+    let count 1;  //Private variable OR LOCAl variable
+    return ()=>{
+    const increment = count +1;
+    return increment;    
+    };
+}
+const counterA = counter();
+const counterB = counter();
+
+console.log(counterA());
+console.log(counterA());
+console.log(counterA());
+
+console.log(counterB());
+console.log(counterB());
+
+
+```
+##### Benifits
+- Data encapsulation
+- 
+
+#### Explicit Function
+```js
+const summer =() => {
+    return 0;
+}
+cost addition =(a, b) => {
+    return a+b;
+}
+```
+
+#### Impicit Function
+``` JS
+const summer = () => 0;
+const addition = (a,b) => a+b;
+console.log(summer());
+console.log(addition());
+```
+
+#### Anonymous Function
+- Function without function name;
+- used in logging;
+```js
+const test = function () {
+    console.log("test");
+    return;
+}
+test();
+```
+
+#### Inline function
+```js
+    const testInline = function () {};
+```
+
+#### Callback Function
+It is a function that accepts another function as an parameter.
+```js
+const print = (data) => {
+    console.log(`Hello ${data}`);
+    return;
+} 
+
+const main  = (user = "user", callBackFn) =>{
+    const information = `Mr ${user}`;
+    return callBackFn(information);
+}
+main("Pramesh", print);
+```
+
+#### Pure Function (Utilities function)
+Fuction whose result doesn't change for same input
+
 ### What is hoisting?
 ### Waht is block vs scope fuction?
+
+## Scope
+### Private variables
+### Local Variables
+### Global varaibales
+### Lexical Scoping
+### Closure Concept => 
