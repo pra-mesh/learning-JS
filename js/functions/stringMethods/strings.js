@@ -31,20 +31,31 @@ console.log(isPhoneNumber("9841362926"));
 
 //Write a js function ato create a proper case
 // "raktim shrestha" => "Raktim Shrestha"
+// const indexOfNextChar =(data = "") => {
+//     let indexvalue = data.indexOf(" ");
+//     return() =>{
+//         return data.indexOf(' ', indexvalue+1);
+//     };
+// }
+
+// const indexval = indexOfNextChar("Hello world Pramesh");
+// console.log(indexval())
+
 const properCasing = (val = "") => {
    let properCased ="";
    let index = val.indexOf(' ');
-    properCased=val.charAt(0).toUpperCase().concat("", val.slice(1,index).toLowerCase());
+   val = String(val).toLowerCase();
+    properCased=val.charAt(0).toUpperCase().concat("", val.slice(1,index));
     while (index !== -1) {
         let previousIndex = index;
         index = val.indexOf(' ', index + 1);
         if(index === -1) 
         {
-        properCased = properCased.concat(" ", val.charAt(previousIndex + 1).toUpperCase().concat("", val.slice(previousIndex +2).toLowerCase()));
+        properCased = properCased.concat(" ", val.charAt(previousIndex + 1).toUpperCase().concat("", val.slice(previousIndex +2)));
         }
         else
         {
-        properCased = properCased.concat(" ", val.charAt(previousIndex + 1).toUpperCase().concat("", val.slice(previousIndex +2,index).toLowerCase()));
+        properCased = properCased.concat(" ", val.charAt(previousIndex + 1).toUpperCase().concat("", val.slice(previousIndex +2,index)));
         }
     }
     return properCased;
@@ -53,6 +64,7 @@ const properCasing = (val = "") => {
 const propCasingWithFor = (val ="") => {
     let properCased ="";
     let wordStart = true;
+    val = String(val).toLowerCase();
     for(let i =0; i <val.length; i++){
         if(val[i]===" "){
             properCased = properCased.concat("", " ");
@@ -64,7 +76,7 @@ const propCasingWithFor = (val ="") => {
                 wordStart = false;
             }
             else{
-                properCased = properCased.concat("", val[i].toLowerCase());
+                properCased = properCased.concat("", val[i]);
             }
         }
     }
@@ -72,15 +84,6 @@ const propCasingWithFor = (val ="") => {
 }
 console.log(propCasingWithFor("mAusam dHakal"));
 
-// const indexOfNextChar =(data = "") => {
-//     let indexvalue = data.indexOf(" ");
-//     return() =>{
-//         return data.indexOf(' ', indexvalue+1);
-//     };
-// }
-
-// const indexval = indexOfNextChar("Hello world Pramesh");
-// console.log(indexval())
 
 // Write a js function to clean the data
 //"           Raktim           Shrestha    " => "Raktim Shrestha"
