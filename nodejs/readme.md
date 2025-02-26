@@ -59,3 +59,54 @@ callstack(requests) --> webAPIs (browser webapi -(settimeout,DOM, fetch)) --> ca
 ```js
  {} = required("");
 ```
+
+### npm
+
+NPM is used to install packages from community or third party.
+
+#### Check if NPM exists
+
+npm -v (one time check) in terminal (some time it gives issue in terminal you need use bash)
+
+#### Initialize npm
+
+npm init -y :(-y to avoid initializing process)
+
+#### instal package
+
+npm install (pkgName) || npm i (pkgName) ||npm i --save (pkgName)
+npm i --save-dev nodemon
+npm i --D nodemon (--D or save-dev install dependencies on developer mode)
+
+- _WE can goto [NPMjs](www.npmjs.com) to check avilable package_
+
+#### uninstall package
+
+npm uninstall (pkgName) || npm i (pkgName)
+
+\_Check .gitigonre if not exist create and add node_modules\_
+
+### Project setup
+
+0. Create new Project folder, go insside that folder
+1. npm -v (one time check) in terminal
+2. npm init -y
+3. package.json file should be generated
+4. Goto www.npmjs.com, search any library.
+5. npm i proper-upper-case
+6. if needed, npm uninstall <package-name>
+7. Check the package.json file, for dependencies object
+8. Create .gitignore file and folder path node_modules\
+9. Use package in the project file.
+10. If the node_modules folder not found run `npm i`
+11. Install developer dependencies as devDependencies using
+    a. npm i -D nodemon
+    b. npm i --save-dev nodemon
+12. Start using npm for any operations such as dev mode or production mode
+13. update `script` object with
+
+  ```json
+    "dev":"nodemon index.js",
+    "start":"node index.js"
+  ```
+14. npm run dev to start in developer mode / npm run start to run in production mode.

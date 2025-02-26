@@ -7,6 +7,8 @@ const os = require("os");
 const server = require("http");
 const myModule = require("./my-own");
 const { generateDescription, generateTitle } = require("./my-own");
+//const properCase = require("proper-upper-case");
+//console.log(properCase("hEllo aNil"));
 
 const { volume } = require("./area");
 const getTotalMemory = () => os.totalmem() / (1024 * 1024 * 1024);
