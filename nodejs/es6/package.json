@@ -1,7 +1,8 @@
 {
-  "name": "projects",
+  "name": "es6",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js"
@@ -10,12 +11,6 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "currency-converter-lt": "^2.0.1",
-    "pdfkit": "^0.16.0",
-    "proper-upper-case": "^0.1.0",
-    "qrcode": "^1.5.4"
-  },
   "devDependencies": {
     "nodemon": "^3.1.9"
   }

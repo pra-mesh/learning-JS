@@ -1,5 +1,5 @@
 {
-  "name": "projects",
+  "name": "country_code",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,12 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "currency-converter-lt": "^2.0.1",
-    "pdfkit": "^0.16.0",
-    "proper-upper-case": "^0.1.0",
-    "qrcode": "^1.5.4"
-  },
-  "devDependencies": {
+    "i18n-iso-countries": "^7.14.0",
     "nodemon": "^3.1.9"
   }
 }

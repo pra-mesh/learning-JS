@@ -92,7 +92,7 @@ npm uninstall (pkgName) || npm i (pkgName)
 1. npm -v (one time check) in terminal
 2. npm init -y
 3. package.json file should be generated
-4. Goto www.npmjs.com, search any library.
+4. Goto <www.npmjs.com>, search any library.
 5. npm i proper-upper-case
 6. if needed, npm uninstall <package-name>
 7. Check the package.json file, for dependencies object
@@ -109,4 +109,7 @@ npm uninstall (pkgName) || npm i (pkgName)
     "dev":"nodemon index.js",
     "start":"node index.js"
   ```
+
 14. npm run dev to start in developer mode / npm run start to run in production mode.
+
+_NPX can be used to check locally added package_

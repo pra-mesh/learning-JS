@@ -1,5 +1,5 @@
 {
-  "name": "projects",
+  "name": "npm-exercies",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,13 +10,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "currency-converter-lt": "^2.0.1",
-    "pdfkit": "^0.16.0",
-    "proper-upper-case": "^0.1.0",
-    "qrcode": "^1.5.4"
-  },
   "devDependencies": {
     "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
   }
 }
